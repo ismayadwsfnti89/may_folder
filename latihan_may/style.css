@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: cornsilk;
+    color:beige;
+    line-height: 1.6;
+}
+header {
+    background: #dc5656;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover { text-decoration: underline; }
+
+/* Section */
+section { padding: 2rem; text-align: center; }
+
+/* Search Form */
+.search-form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.search-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-form input:hover { border-color: #2c3e50; }
+
+/* Grid Catalog */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.card:hover { transform: scale(1.05); }
+
+/* Button */
+.btn-primary {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-primary:hover { background: #34495e; }
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
